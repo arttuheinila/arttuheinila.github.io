@@ -1,0 +1,125 @@
+html {
+    background-color: lightgrey;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'Unbounded', cursive;
+    font-weight: bold;
+    color: black
+}
+
+p, footer {
+    font-family: 'Sofia Sans', sans-serif;
+    color: black;
+    line-height: 25px;
+}
+
+a {
+    font-family: 'Sofia Sans', sans-serif;
+    color: black;
+    font-size: 22px;
+        
+}
+
+h3 {
+    font-family: 'Unbounded', cursive;
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px black solid;
+}
+
+.navigation-items {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+}
+
+
+.contact-items {
+    display: inline-flex;
+    margin: 0 auto;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+li {
+    margin: 8px;
+}
+
+.about-me-container {
+    display: flex;
+}
+
+.image-me {
+    margin-top: 60px;
+    width: 500px;
+    height: 75%;
+    border-radius: 12px;
+}
+
+.skill {
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    align-content: space-between;
+    flex-wrap: wrap;    
+    line-height: 25px;
+
+}
+
+footer {
+    margin-top: 8px;
+    padding-top: 8px;
+    text-align: center;
+    font-family: 'Unbounded', cursive;
+    border-top: 1px black solid;
+}
+
+@media only screen and (max-width: 600px) {
+    .about-me-container {
+        flex-direction: column;
+    }
+} 
+
+details {
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+summary {
+	list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+    line-height: 25px;
+}
+
+h3 {
+    font-family: 'Sofia Sans', sans-serif;
+    font-weight: bold;
+    color: black;
+    display: inline;
+}
+
+.project > a {
+    font-weight: 600;
+    font-size: 18px;
+
+}

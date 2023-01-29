@@ -1,9 +1,117 @@
+<!DOCTYPE html>
 <html>
- 
-<body>
-  <h1>ARTTU HEINILÄ</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
- 
+    <head>
+        <meta name="viewport" conent="width=device-width, initial-scale 1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Unbounded:wght@400;700;800&display=swap" rel="stylesheet">
+        <script src="./script.js"></script> 
+
+        </head>
+    <body> <!--//<script scr="script.js"> </script> flex body and nav -->
+        <nav>
+            <h2 id="logo">Arttu Heinilä</h2>
+            <ul class="navigation-items">
+                <li class="navigation-item">
+                    <a href="#about-me">About Me</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="#projects">Projects</a>
+                </li>
+                <li class="navigation-item">
+                    <a href=#skills>Skills</a>
+                </li>
+                <li class="navigation-item">
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav> 
+        <main>
+            <section id="about-me">
+                <div class="about-me-container">
+                    <div class="about-me-text-container">
+                        <h2>About Me</h2>
+                        <p>I started learning to code with Python out of curiosity in 2019. After the basics I enrolled in Data Sciences program by Codecademy, which I completed in 2020.</p>
+                        <p>After the Data Sciences -path I continued with Al Sweigarts fantastic book "Automate the boring stuff", Ryan Mitchells "Web scraping with Python", Al Sweigart (again) "Impractical Python Projects" and "Big Book of Small Code".</p>
+                        <p>I also do have a Master's Degree in Social Services and working within that field. Social services background gives me a unique set of skills and experiences that might be helpful with a programmers career.</p>
+                        <p>I love the sense of freedom, control and constant learning I get with programming. Currently I am learning the skills needed to work as a Full Stack Engineer and I am looking to work in the field.</p>
+                        <p>Fun fact! I have been programming for <span id="time-container">NaN</span> seconds!</p>
+                    </div>
+                    <img class="image-me" src="./5e577b5694c9cd54e8f7233e_778649011.jpg" alt="Arttu Heinilä">
+                </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>                
+                <details class="project">
+                    <summary class="project-title">
+                        <h3>Pomodoro Work Timer</h3> 
+                    </summary>
+                    <img src="#" alt="Pomodoro Work Timer Screencapture">
+                    <p class="project-description">Pomodoro Work Timer Program that times your work in 25 minute sprints, after which the program starts a 5 minute break. The timer logs your working habits to a file separate file. After 4 pomodoros the program activates a longer break<br>Program includes a changing GUI that has distinct color and location on screen to signal whether you should be working or taking a break.</p>
+                    <p class="languages-and-packages">Python, GUI, Access file system</p>
+                </details>
+                <details class="project">
+                    <summary class="project-title">
+                        <h3>Aphorism nonsense generator</h3>
+                    </summary>
+                    <img src="#" alt="Aphorism Generator Screencapture">
+                    <p class="project-description">The Program generates nonsensical aphorisms of three lines for your amusement.</p>
+                    <a href="https://github.com/arttuheinila/aphorism_nonsense_generator">Link to project GitHub-page</a>
+                    <p class="languages-and-packages">Javascript, random</p>
+                </details>
+                <details class="project">
+                    <summary class="project-title">
+                        <h3>Breeding Giant Rats with Genetic Algorithms</h3>
+                    </summary>
+                    <img src="#" alt="Breeding Giant Rats Screencapture">
+                    <p class="project-description">Breeding a race of superrats. The objective is to use a genetic algorithm to simulate breeding rats to an average weigth of 110 pounds (about the size of female bullmastiff) with only selective breeding.</p>
+                    <p class="languages-and-packages">Python, looping, statistics</p>
+                </details>
+                <details class="project">
+                    <summary class="project-title">
+                        <h3>Monte Carlo engine Retirement Calculator</h3>
+                    </summary>
+                    <img src="#" alt="Monte Carlo Engine of Stock Investing Screencapture">
+                    <p class="project-description">Using the Monte Carlo Simulation to test the probability of having enough at retirement or going broke. Simulated lifetimes at **</p>
+                    <p class="languages-and-packages">Python, files, **</p>
+                </details>
+                <details class="project">
+                    <summary class="project-title">
+                        <h3>Stock buy and sell alert and email program</h3>
+                    </summary>
+<!--                    <img src="#" alt="Stock alert program"> -->
+                    <p class="project-description">Stock market evaluation program that srapes historical data of specified stock ticker list, evaluates against current stock prices and at set percentages triggers an email to be sent to specified email address to tell recipient to buy stock when low enough</p>
+                    <p class="project-description">Program also evaluates from a list of already bought stocks and their prices and emails when time to sell those stocks for specified gains. Program includes cryptocurrencies</p>
+                    <p class="languages-and-packages">Python, Webscraping, API, Looping, Files, Emails, Excel</p>
+                </details>
+                <details class="project">
+                    <summary class="project-title">
+                        <h3>Bagels Guessing Game</h3>
+                    </summary>
+                    <img src="#" alt="Bagels Game Screencapture">
+                    <p class="project-description">A guessing game where program generates a random 3 digits combination and the human has 10 guesses to correctly guess the digits and their order. Guessing the right digit in wrong position "Pico". Right digit in right position prints "Fermi". If none of the guessed digits are correct prints "Bagels"</p>
+                    <p class="languages-and-packages">Python, looping, random</p>
+                </details>
+            </section>
+            <section id="skills"></section>
+            <h2>Skills</h2>
+            <ul class="skill-container"></ul>
+                <li class="skill">HTML</li>
+                <li class="skill">CSS</li>
+                <li class="skill">JavacScript</li>
+                <li class="skill">Git</li>
+                <li class="skill">Python</li>
+                <li class="skill">GitHub</li>
+                <li class="skill">BeautifulSoup</li>
+                <li class="skill">Finnish</li>
+                <li class="skill">English</li>
+        </main>   
+    </body>
+    <footer>
+        Made with
+        <span class="heart">♥</span>
+        in Pori
+    </footer>
 </html>
